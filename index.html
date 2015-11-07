@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 	<head>
 		<meta charset="utf-8">
-		<title>ETS2 Avatar</title>
+		<title>Генератор аватарок для ETS2 Multiplayer</title>
+
+		<meta name="description" content="Генератор Steam аватарок для ETS2 Multiplayer у вигляді автомобільних номерних знаків України">
+		<meta name="keywords" content="ETS2,ETS2MP,Steam,Avatar,номерні знаки">
 
 		<style>
 			@font-face {
@@ -15,22 +18,27 @@
 				border: 5px solid #838BA9;
 				width: 200px;
 				display: block;
+				font-family: RoadNumbers;
 			}
 			.center {
 				text-align: center;
-				font-family: RoadNumbers;
 			}
 		</style>
 	</head>
 
 	<body>
-		<p class="center">
+		<header class="center">
+			<h1>Генератор аватарок для ETS2 Multiplayer</h1>
+			<span>Оберіть регіон і завантажте зображення</span>
+		</header>
+
+		<p class="center">Регіон:
 				<select id="regions">
 					<option value="">-region-</option>
 				</select>
 		</p>
 
-		<canvas id="avatar" width="200" height="200">Your browser is piece of shit.</canvas>
+		<canvas id="avatar" width="200" height="200">Ваш браузер не підтримує Canvas</canvas>
 
 		<p class="center"><a id="download" download="avatar.jpg" href="#">Завантажити</a><p>
 
