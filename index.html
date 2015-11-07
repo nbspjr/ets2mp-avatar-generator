@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ETS2 Avatar</title>
+
+		<style>
+			@font-face {
+				font-family: RoadNumbers;
+				src: url(fonts/RoadNumbers2.0.ttf);
+			}
+
+			#avatar {
+				margin: 30px auto;
+				border: 5px solid #838BA9;
+				width: 200px;
+				display: block;
+			}
+			.center {
+				text-align: center;
+				font-family: RoadNumbers;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p class="center">
+				<select id="regions">
+					<option value="">-region-</option>
+				</select>
+		</p>
+
+		<canvas id="avatar" width="200" height="200">Your browser is piece of shit.</canvas>
+
+		<p class="center"><a id="download" download="avatar.jpg" href="#">Завантажити</a><p>
+
+		<script src="js/script.js"></script>
+
+	</body>
+
+</html>
